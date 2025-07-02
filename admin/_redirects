@@ -1,0 +1,6 @@
+# CMS Admin redirects - Must be before SPA fallback
+/admin /admin/ 301
+/admin/* /admin/index.html 200
+
+# SPA fallback
+/* /index.html 200

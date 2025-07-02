@@ -1,10 +1,243 @@
 <!doctype html>
-<html>
+<html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <title>ON AFRICA TP - Admin</title>
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ON AFRICA TP.sarl - Spécialiste BTP, logistique et travaux publics en Afrique. Construire l'Afrique de demain, aujourd'hui." />
+    <title>ON AFRICA TP.sarl - Construire l'Afrique de demain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
+    <!-- Navigation -->
+    <nav id="navigation" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-lg shadow-lg border-b border-primary-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo -->
+          <a href="/" class="flex items-center space-x-3">
+            <img src="https://i.postimg.cc/x8zq9Qvf/2025-06-29-T075316-796.png" alt="ON AFRICA TP Logo" class="h-12 w-auto">
+            <div class="text-xl font-bold text-primary-800">ON AFRICA TP</div>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden lg:flex items-center space-x-6">
+            <a href="/" class="nav-link px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg">Accueil</a>
+            <a href="/presentation.html" class="nav-link px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg">Présentation</a>
+            <a href="/mot-du-directeur.html" class="nav-link px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg">Le mot du directeur</a>
+            <a href="/services.html" class="nav-link px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg">Nos services</a>
+            <a href="/realisations.html" class="nav-link px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg">Réalisations</a>
+            <a href="/partenaires.html" class="nav-link px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg">Nos partenaires</a>
+            <a href="/contact.html" class="nav-link px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg">Contact</a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md text-primary-700 hover:text-primary-900 hover:bg-primary-50 transition-colors">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="lg:hidden bg-white/95 backdrop-blur-lg border-t border-primary-200 shadow-lg hidden">
+        <div class="px-4 py-4 space-y-2 max-h-96 overflow-y-auto">
+          <a href="/" class="mobile-nav-link block px-4 py-3 text-base font-medium rounded-lg transition-all duration-300">Accueil</a>
+          <a href="/presentation.html" class="mobile-nav-link block px-4 py-3 text-base font-medium rounded-lg transition-all duration-300">Présentation</a>
+          <a href="/mot-du-directeur.html" class="mobile-nav-link block px-4 py-3 text-base font-medium rounded-lg transition-all duration-300">Le mot du directeur</a>
+          <a href="/services.html" class="mobile-nav-link block px-4 py-3 text-base font-medium rounded-lg transition-all duration-300">Nos services</a>
+          <a href="/realisations.html" class="mobile-nav-link block px-4 py-3 text-base font-medium rounded-lg transition-all duration-300">Réalisations</a>
+          <a href="/partenaires.html" class="mobile-nav-link block px-4 py-3 text-base font-medium rounded-lg transition-all duration-300">Nos partenaires</a>
+          <a href="/contact.html" class="mobile-nav-link block px-4 py-3 text-base font-medium rounded-lg transition-all duration-300">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="relative h-screen flex items-center justify-center overflow-hidden pt-24">
+        <div class="bg-shapes">
+          <div class="bg-shape bg-shape-1"></div>
+          <div class="bg-shape bg-shape-2"></div>
+          <div class="bg-shape bg-shape-3"></div>
+        </div>
+        <div id="hero-background" class="absolute inset-0 bg-cover bg-center bg-no-repeat">
+          <div class="absolute inset-0 bg-gradient-to-br from-primary-800/80 via-primary-800/70 to-primary-900/80"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
+          <h1 id="hero-title" class="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 text-shadow animate-fade-in">
+            Construire l'Afrique
+            <br />
+            <span class="text-accent-400">de demain, aujourd'hui</span>
+          </h1>
+          
+          <p id="hero-subtitle" class="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto text-gray-100 animate-slide-up">
+            Spécialiste en BTP, logistique et travaux publics depuis 2009. 
+            Votre partenaire de confiance pour tous vos projets.
+          </p>
+          
+          <div class="flex justify-center animate-scale-in">
+            <a href="/presentation.html" id="hero-cta" class="inline-flex items-center px-8 py-4 bg-primary-600 text-white text-lg font-semibold rounded-full hover:bg-primary-700 transition-all duration-300 btn-3d group">
+              Découvrir notre mission
+              <svg class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in">
+          <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+            <div class="w-1 h-3 bg-white rounded-full mt-2 animate-bounce"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Preview -->
+      <section class="relative py-20 bg-gray-50 overflow-hidden">
+        <div class="bg-shapes">
+          <div class="bg-shape bg-shape-minimal-1"></div>
+          <div class="bg-shape bg-shape-minimal-2"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 animate-fade-in">
+            <h2 class="text-4xl lg:text-5xl font-bold text-primary-800 mb-6">
+              Nos domaines d'expertise
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Des solutions complètes et innovantes pour répondre à tous vos besoins 
+              en construction, logistique et travaux publics.
+            </p>
+          </div>
+
+          <div id="services-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Services will be loaded dynamically -->
+          </div>
+
+          <div class="text-center mt-12 animate-fade-in">
+            <a href="/services.html" class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-full hover:bg-primary-700 transition-all duration-300 btn-3d">
+              Voir tous nos services
+              <svg class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="relative py-20 bg-gradient-to-br from-primary-800 to-primary-900 text-white overflow-hidden">
+        <div class="bg-shapes">
+          <div class="bg-shape bg-shape-1"></div>
+          <div class="bg-shape bg-shape-2"></div>
+          <div class="bg-shape bg-shape-3"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12 animate-fade-in">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+              Notre expertise en chiffres
+            </h2>
+            <p class="text-xl text-gray-200 max-w-2xl mx-auto">
+              Des résultats concrets qui témoignent de notre engagement
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="space-y-4 p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 card-3d animate-scale-in">
+              <div class="text-4xl lg:text-6xl font-bold">
+                <span class="counter-number text-accent-300" data-target="16">0</span>+
+              </div>
+              <div class="text-gray-200 text-sm lg:text-base font-medium">
+                Années d'expérience
+              </div>
+            </div>
+            <div class="space-y-4 p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 card-3d animate-scale-in">
+              <div class="text-4xl lg:text-6xl font-bold">
+                <span class="counter-number text-accent-300" data-target="500">0</span>+
+              </div>
+              <div class="text-gray-200 text-sm lg:text-base font-medium">
+                Projets réalisés
+              </div>
+            </div>
+            <div class="space-y-4 p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 card-3d animate-scale-in">
+              <div class="text-4xl lg:text-6xl font-bold">
+                <span class="counter-number text-accent-300" data-target="100">0</span>+
+              </div>
+              <div class="text-gray-200 text-sm lg:text-base font-medium">
+                Clients satisfaits
+              </div>
+            </div>
+            <div class="space-y-4 p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 card-3d animate-scale-in">
+              <div class="text-4xl lg:text-6xl font-bold">
+                <span class="counter-number text-accent-300" data-target="24">0</span>/7
+              </div>
+              <div class="text-gray-200 text-sm lg:text-base font-medium">
+                Support disponible
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-primary-800 to-primary-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="space-y-4 animate-fade-in">
+            <img src="https://i.postimg.cc/x8zq9Qvf/2025-06-29-T075316-796.png" alt="ON AFRICA TP Logo" class="h-16 w-auto brightness-0 invert">
+            <p class="text-gray-200 text-sm leading-relaxed">
+              Spécialiste en BTP, logistique et travaux publics. 
+              Construire l'Afrique de demain, aujourd'hui.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="space-y-4 animate-fade-in">
+            <h3 class="text-lg font-semibold">Liens rapides</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="/presentation.html" class="text-gray-200 hover:text-white transition-colors">Présentation</a></li>
+              <li><a href="/mot-du-directeur.html" class="text-gray-200 hover:text-white transition-colors">Le mot du directeur</a></li>
+              <li><a href="/services.html" class="text-gray-200 hover:text-white transition-colors">Nos services</a></li>
+              <li><a href="/realisations.html" class="text-gray-200 hover:text-white transition-colors">Réalisations</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="space-y-4 animate-fade-in">
+            <h3 class="text-lg font-semibold">Nos services</h3>
+            <ul class="space-y-2 text-sm text-gray-200">
+              <li>Construction de bâtiments</li>
+              <li>Terrassement et voirie</li>
+              <li>Aménagements agricoles</li>
+              <li>Logistique et transport</li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div id="footer-contact" class="space-y-4 animate-fade-in">
+            <h3 class="text-lg font-semibold">Contact</h3>
+            <div class="space-y-3 text-sm">
+              <!-- Contact info will be loaded dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-primary-700 mt-8 pt-8 text-center animate-fade-in">
+          <p class="text-gray-200 text-sm">
+            © 2025 ON AFRICA TP.sarl. Tous droits réservés.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
   </body>
 </html>
