@@ -1,0 +1,39 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# CMS Admin redirects - Order is important!
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 301
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+# SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Security headers for CMS
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"
+    Content-Security-Policy = "frame-ancestors 'self' https://dev-4kft48xmc0z1tqfz.us.auth0.com https://*.auth0.com"
+
+# Auth0 specific headers
+[[headers]]
+  for = "/admin/"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "frame-ancestors 'self' https://dev-4kft48xmc0z1tqfz.us.auth0.com https://*.auth0.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://cdn.auth0.com https://dev-4kft48xmc0z1tqfz.us.auth0.com"
